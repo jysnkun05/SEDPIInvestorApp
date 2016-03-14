@@ -3,9 +3,16 @@
 namespace App;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class User extends Authenticatable
 {
+    use UuidForKey;
+    use SoftDeletes;
+
+    protected $table = 'investor_users';
+    protected $dates = ['deleted_at'];
+    public $incrementing = false;
     /**
      * The attributes that are mass assignable.
      *

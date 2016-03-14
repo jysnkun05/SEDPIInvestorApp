@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -27,5 +23,13 @@ Route::get('/', function () {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::get('login', ['uses' => 'Auth\AuthController@getLogin', 'as' => 'investor_login']);
+    Route::post('login', 'Auth\AuthController@postLogin');
+
+    Route::group(['middleware' => 'auth'], function () {
+    	Route::get('/', function () {
+    		return redirect('statement-of-account');
+    	});
+		Route::get('statement-of-account', ['uses' => 'InvestorController@showSOA', 'as' => 'investor_soa']);
+    });
 });

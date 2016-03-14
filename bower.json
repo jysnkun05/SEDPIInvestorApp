@@ -1,0 +1,23 @@
+{
+  "name": "SEDPIInvestorApp",
+  "description": "Client Side Investment App",
+  "main": "",
+  "authors": [
+    "jysn <jysndlsrys05@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jysnkun05/SEDPIInvestorApp",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-material-design": "~0.5.8",
+    "font-awesome": "fontawesome#~4.5.0"
+  }
+}
