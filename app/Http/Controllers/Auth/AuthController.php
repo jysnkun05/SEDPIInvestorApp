@@ -33,6 +33,7 @@ class AuthController extends Controller
      */
 
     protected $username = 'email';
+    protected $redirectPath = '/statement-of-account';
 
     /**
      * Create a new authentication controller instance.

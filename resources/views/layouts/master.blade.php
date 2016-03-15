@@ -41,6 +41,9 @@
         <script src="{{asset('common/js/bootstrap.min.js')}}"></script>
         <script src="{{asset('common/js/material.min.js')}}"></script>
         <script src="{{asset('common/js/ripples.min.js')}}"></script>
+        <script src="{{asset('common/js/moment.min.js')}}"></script>
+        <script src="{{asset('common/js/accounting.min.js')}}"></script>
+        <script src="{{asset('app/bundle.js')}}"></script>
     
         <script type="text/javascript">
             $.material.init();

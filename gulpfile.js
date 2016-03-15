@@ -23,7 +23,9 @@ gulp.task('common-js', function () {
 		BOWER_FILES + 'bootstrap-material-design/dist/js/material.min.js',
 		BOWER_FILES + 'bootstrap-material-design/dist/js/ripples.min.js',
 		BOWER_FILES + 'jquery/dist/jquery.min.js',
-		BOWER_FILES + 'snackbarjs/dist/snackbar.min.js'
+		BOWER_FILES + 'snackbarjs/dist/snackbar.min.js',
+		BOWER_FILES + 'moment/min/moment.min.js',
+		BOWER_FILES + 'accounting/accounting.min.js'
 	])
 	.pipe(checkFileSize())
 	.pipe(gulp.dest('./public/common/js'));

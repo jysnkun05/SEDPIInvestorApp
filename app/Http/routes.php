@@ -32,4 +32,8 @@ Route::group(['middleware' => ['web']], function () {
     	});
 		Route::get('statement-of-account', ['uses' => 'InvestorController@showSOA', 'as' => 'investor_soa']);
     });
+
+    Route::group(['prefix' => 'api/account'], function () {
+    	Route::post('getAllTransactions', 'InvestorController@getAllTransactions');
+    });
 });

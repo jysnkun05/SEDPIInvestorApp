@@ -10,6 +10,7 @@
 					<div class="page-header">
 						<h2>My Statement of Account</h2>
 					</div>
+					<div id="account-statement"></div>
 				</div>
 			</div>
 		</div>
